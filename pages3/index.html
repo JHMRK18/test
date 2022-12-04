@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information About Self</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/681aca6204.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="johnp3.png" class="rob">
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobby">My Hobby</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>John <span>MARK</span><br>C. Pagaran</h1>(2<span>nd </span> Year College Students)
+        </div>
+    </div>
+</div>
+
+<!---------about------------->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="jm.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>hi i'm<span>JOHN MARKC.PAGARAN </span> <br> preached at Napayong elementary school and in 2013 I finished elementary,<br>
+                    and Napayong high school. I also went to high school and finished in 2017,
+              and moved to another school due to diligence and enrolled in access computer college for 2 years,
+               and graduated in 2017. 2020 in the middle of the pandemic</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('parents')">Parents</p>
+                    <p class="tab-links" onclick="opentab('siblings')">Siblings</p>
+                    <p class="tab-links" onclick="opentab('motivational speech')">Motivational Speech</p>
+                </div>
+                <div class="tab-contents active-tab" id="parents">
+                    <ul>
+                        <li><span>Mother</span><br>MARY jane c</li>
+                        <li><span>Father</span><br>Reynaldo C.Pagaran </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="siblings">
+                    <ul>
+                        <li><span>Brother</span><br>Jomarie C.Pagaran</li>
+                        <li><span>Brother</span><br>Jeffry C.Pagaran</li>
+                        <li><span>Brother</span><br>Johnry C.Pagaran</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="motivational speech">
+                    <ul>
+                        <li><span>-Geo Ong</span><br>Ang byahe ng buhay ay para kang nasa sasakyan
+                        ang pag silang mo ay parang pag pihit ng susi, pag nangyare yun isa lamang ang ibig sabihin. umpisa na nang byahe mo!
+
+                        Dapat diretso lang ang tingin, di ka pwedeng lingon ng lingon madidisgrasya ka, di ka pwdeng singit ng singit makakasagi ka,
+                        antayin mo yung tamang tyempo para makahataw, at pag andun ka na hindi ka pwdeng pabagal bagal mauunahan ka, diretso lang ang byahe
+                        di ka pwdeng hinto ng hinto o liko ng liko mauubusan ka ng gasolina (oras) at asahan mo na pag malayo na ang narating mo dadami ang gusto makisabay sa byahe mo,
+                        pero hindi mo maaring pasakayin ang lahat ng gustong sumakay, dahil bibigat ang iyong pag papatuloy, piliin mo lang ang alam mong tunay at determinadong dumiretso ano man ang mangyare,
+                        pag sinakay mo lahat matatagalan kang makarating sa iyong destinasyon, may mga sakay na habang pinag mamaneho mo sila patungo sa destinasyon ng tagumpay, pipilitin nilang baguhin ang ruta mo sa kung anong ruta nila nakasanayan.
+                        Wag na wag kang papayag, kung gusto talaga nilang pumaruon sa rutang gusto nila, hayaan mo silang bumaba sa sasakyan mo.
+                        Basta laging diretso ang tingin at wag lingon ng lingon, ikaw ang may hawak ng manubela mo, dalhin mo ang sarili mo kung san meron kang patutunguhan.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------Hobby--------- -->
+<div id="hobby">
+    <div class="container">
+        <h1 class="sub-title">Hobby</h1>
+        <div class="hobby-list">
+            <div>
+                <i class="fa-solid fa-basketball"></i>
+                <h2>Basketball</h2>
+                <p>My Basketball is a great way to get your mind off things and is also a great way to express,
+                    yourself. It is a sport that can work your whole body. It's a great pastime for any one
+                     and is a great way to bond with family members and friends</p>
+                <a href="#">Enjoy Your Life</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------Contact----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-sharp fa-solid fa-paper-plane"></i> pagaranjohnmark987@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> 09297676066</p>
+                <div class="social-icon">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2022. JR <i class="fa-solid fa-heart-pulse"></i> All rights reserved. </p>
+    </div>
+</div>
+
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+    
+    var sidemenu = document.getElementById("sidemenu");
+
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+ 
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
